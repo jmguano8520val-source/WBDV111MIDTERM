@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBite Prep</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">FreshBite Prep</div>
+        <div class="nav-buttons">
+            <button class="nav-btn active">Meals</button>
+            <button class="nav-btn">Billing</button>
+            <button class="nav-btn">Plans</button>
+            <button class="info-btn">Nutrients <i class="fas fa-leaf"></i></button>
+        </div>
+        <button id="loginToggle" class="login-toggle-btn">
+            <i class="fas fa-user-circle"></i> Login
+        </button>
+    </nav>
+
+
+    <!-- Side Drawer Login (Hidden by Default) -->
+    <div id="loginDrawer" class="login-drawer">
+        <div class="drawer-header">
+            <h3>Sign In</h3>
+            <button id="closeDrawer" class="close-btn">&times;</button>
+        </div>
+        <form class="login-form">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+            <p class="signup-link">New here? <a href="#">Create Account</a></p>
+        </form>
+    </div>
+
+
+    <!-- Overlay for Drawer -->
+    <div id="overlay" class="overlay"></div>
+
+
+    <!-- Main Food Gallery -->
+    <main class="main-content">
+        <h1>Delicious, Nutritious Meals Delivered</h1>
+        <div class="food-card">
+            <img src="assets/burger.jpg" alt="Gourmet Meal">
+            <h2>Grilled Chicken Bowl</h2>
+            <p>High-protein bowl with grilled chicken, seasonal veggies, and quinoa.</p>
+        </div>
+        <!-- Add more food cards here as needed -->
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
