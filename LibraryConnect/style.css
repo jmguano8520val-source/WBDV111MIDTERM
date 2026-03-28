@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3ede1; /* Cream/vintage background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Serif', Georgia, 'Times New Roman'; /* Para sa vintage look */
+    color: #cfcf2e;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #e16969;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para hindi lumampas ang width */
+    background-color: #fafafa;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d56b1a; /* Brown color gaya ng sa image */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #6d4a2f;
+}
