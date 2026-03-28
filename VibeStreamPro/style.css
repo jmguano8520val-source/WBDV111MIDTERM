@@ -1,0 +1,77 @@
+/* Body background color base sa image */
+body {
+    background-color: #f5e6d3; 
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    font-family: serif;
+}
+
+/* Itim na border sa paligid ng grid */
+.main-container {
+    border: 5px solid black;
+    padding: 40px;
+    background-color: #f5e6d3;
+    display: inline-block;
+}
+
+/* Grid settings: 3 columns */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Style para sa bawat song item */
+.song-card p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Ang itim na box mismo */
+.black-box {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+}
+
+/* Para sa song 7 at 8 na nasa huling row */
+.song-card:nth-child(7) {
+    grid-column: 1;
+    margin-left: 50%; /* Konting adjustment para mag-center */
+}
+
+
+
+
+/* Para pumunta sa gitna ang buong layout */
+.main-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Eto ang magic ng Grid - gagawa ng 4 columns */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns na pantay-pantay */
+    gap: 20px; /* Patlang sa pagitan ng mga cards */
+}
+
+/* Style para sa card */
+.song-card {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Eto yung "black box" o yung placeholder ng image */
+.black-box {
+    width: 150px;       /* Pwedeng baguhin ang laki */
+    height: 150px;
+    background-color: black;
+    margin: 10px auto;  /* Para laging nasa gitna */
+    border-radius: 5px;
+}
