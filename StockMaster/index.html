@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Overview - StockMaster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #e7dde4; color: rgb(36, 36, 30); font-family: sans-serif; }
+        .card { background-color: #17e5db; padding: 20px; border-radius: 8px; text-align: center; }
+    </style>
+</head>
+<body class="p-8">
+
+    <!-- Business Overview Section -->
+    <h2 class="text-2xl font-bold mb-6">Business Overview</h2>
+    <div class="grid grid-cols-5 gap-5 mb-10">
+        <div class="card"><p class="text-gray-600">Items Available</p><h1 class="text-4xl font-bold text-blue-400">215</h1></div>
+        <div class="card"><p class="text-gray-600">Total Transactions</p><h1 class="text-4xl font-bold text-blue-400">89</h1></div>
+        <div class="card"><p class="text-gray-600">Partners</p><h1 class="text-4xl font-bold text-blue-400">12</h1></div>
+        <div class="card"><p class="text-gray-600">Critical Stocks</p><h1 class="text-4xl font-bold text-red-500">4</h1></div>
+    </div>
+
+    <!-- Quick Actions -->
+    <h2 class="text-xl font-bold mb-5">Quick Actions</h2>
+    <div class="flex gap-5 mb-11">
+        <button class="bg-red-600 px-5 py-3 rounded">Add Product</button>
+        <button class="bg-red-600 px-5 py-3 rounded">Create Order</button>
+        <button class="bg-red-600 px-5 py-3 rounded">Generate Report</button>
+    </div>
+
+    <!-- Latest Transactions Table -->
+    <h2 class="text-xl font-bold mb-5">Latest Transactions</h2>
+    <table class="w-full text-left border-collapse">
+        <thead class="bg-slate-800 text-blue-300">
+            <tr>
+                <th class="p-5">Transaction ID</th>
+                <th class="p-5">Item</th>
+                <th class="p-5">Quantity</th>
+                <th class="p-5">Status</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-800">
+            <tr><td class="p-3">#A503</td><td class="p-3">USB Flash Drive</td><td class="p-3">12</td><td class="p-3 text-green-500">Completed</td></tr>
+            <tr><td class="p-3">#A507</td><td class="p-3">Laptop Stand</td><td class="p-3">6</td><td class="p-3 text-yellow-500">Processing</td></tr>
+            <tr><td class="p-3">#A509</td><td class="p-3">Wireless Mouse</td><td class="p-3">10</td><td class="p-3 text-red-500">Pending</td></tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
