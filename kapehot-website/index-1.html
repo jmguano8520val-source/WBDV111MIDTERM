@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapehot | Coffee Shop</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://images.unsplash.com/photo-1577552047392-12400b6a3d77?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" rel="stylesheet">
+
+    <style>
+        /* CSS DITO PARA SIGURADONG GAGANA */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* 1. PAG-AAYOS NG NAVIGATION */
+        header {
+            background-color: #3e2723;
+            color: #fff;
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between; /* Logo sa kaliwa, Menu sa kanan */
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex; /* Pinapahiga ang menu */
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+            transition: 0.3s;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            color: #d7ccc8;
+            border-bottom: 2px solid #d7ccc8;
+        }
+
+        /* 2. HERO SECTION */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .btn-order {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background-color: #d7ccc8;
+            color: #3e2723;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* 3. PAG-AAYOS NG PICTURE NG KAPE (SIZE) */
+        .best-sellers {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 280px; /* Uniform na lapad ng card */
+        }
+
+        .product-card img {
+            width: 100%;       /* Susunod sa lapad ng card */
+            height: 200px;     /* Fixed height para pantay-pantay */
+            object-fit: cover; /* Hindi madi-distort ang picture */
+            border-radius: 10px;
+        }
+
+        /* 4. ABOUT SECTION */
+        .about { padding: 60px 10%; background: #fdf5e6; }
+        .about-container { display: flex; align-items: center; gap: 40px; }
+        .about-image img { width: 100%; max-width: 400px; border-radius: 15px; }
+
+        /* 5. FOOTER */
+        footer { background: #3e2723; color: white; padding: 40px; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Kapehot</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Gisingin ang Iyong Umaga</h1>
+            <p>Tikman ang sarap ng purong barako at premium coffee blends.</p>
+            <a href="#menu" class="btn-order">Order Now</a>
+        </div>
+    </section>
+
+    <section class="best-sellers" id="menu">
+        <h2>Our Best Sellers</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/2190516245/photo/close-up-of-americano-pouring-from-the-coffee-machine-into-a-cup-professional-coffee-brewing.jpg?s=2048x2048&w=is&k=20&c=jhNDfKvcJUKxCdlkUyAXa2ptgHvNBW5WyumnbpygIvA=" alt="Brewed Coffee">
+                <h3>Brewed Coffee</h3>
+                <p>₱120.00</p>
+            </div>
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/2153625078/photo/cup-of-coffee-in-a-cafe-outdoor.jpg?s=1024x1024&w=is&k=20&c=rlGxeB1pScFQmxUzuKJxw7bDiwkece2VOYh8X9UAofQ=" alt="Spanish Latte">
+                <h3>Spanish Latte</h3>
+                <p>₱160.00</p>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1527156231393-7023794f363c?q=80&w=711&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Iced Americano">
+                <h3>Iced Americano</h3>
+                <p>₱130.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Kapehot</h2>
+                <p>Ang Kapehot ay nagsimula sa simpleng pangarap na makapagbigay ng de-kalidad na kape. Mula sa farm hanggang sa iyong tasa.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1577552047392-12400b6a3d77?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Valenzuela, Metro Manila</p>
+        <p>📞 0945-729-3389</p>
+        <div style="margin-top: 20px; font-size: 0.8rem;">&copy; 2025 Kapehot Coffee Shop.</div>
+    </footer>
+
+</body>
+</html>
